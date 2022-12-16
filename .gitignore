@@ -4,3 +4,7 @@
 *.index
 *.classpath
 *.project
+.project
+.classpath
+.settings
+.prefs
