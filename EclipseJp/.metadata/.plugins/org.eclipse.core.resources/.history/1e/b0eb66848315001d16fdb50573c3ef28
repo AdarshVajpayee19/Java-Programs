@@ -1,0 +1,17 @@
+package JavaOopsPrograms.ObjectCloning;
+
+public class DeepCopy {
+	public static void main(String args[])
+	{
+		DC obj1=new DC();
+		obj1.i=10;
+		obj1.j=20;
+		
+		DC obj2=new DC();
+		obj2.i=obj1.i;
+		obj2.j=obj1.j;
+		
+		obj2.j=8;
+		System.out.println(obj1);
+	}
+}

@@ -1,0 +1,88 @@
+					COLLECTION
+
+**when we want to store some elements we use array,but in array we know that Array is fixed size.
+**so we if want to expand in future,it is good to use "Collections".
+
+*Collection is basically an interface.
+
+HOW TO CREATE AN COLLECTION?
+since collection is an interface we cannot create an object of interface,so thats why we need to search for 
+the implementation which implements collection.
+EX: ArrayList.
+
+Collection value=new ArrayList();
+value.add(5);
+value.add(5.5);
+value.add("Noun");
+Any type of value u can store.
+Another thing is that if u want to store Specific type of value then You Need to use "Generics" .
+
+By default the type of value above is Object.
+
+Hierarchy goes in this way from top to bottom
+
+					Collection (Interface)
+					      |
+					   List (Interface)
+				               |
+				    ArrayList (Class)
+
+So don't think that array is not useful when Compared to ArrayList or using collection interface.
+Array are useful when u know the size more before.
+so if u know size will be fix then go for Array,since array is fast.
+
+if u have that size is not fix then go for collection because having an option of Expanding and Shrinking.
+
+					GENERICS
+Collection<integer> value=new ArrayList<integer>();
+value.add(5);
+value.add(5.5);
+value.add("Noun");//now these will leads to an error.since now the type is integer.
+
+Angular Brackets because all types of brackets are used so  remaining is this only <>.
+ex: (),{},[].
+
+1.2 Collection API
+1.5 Generics
+1.7 we got an update i.e. 
+
+previously:
+Collection<integer> value=new ArrayList<integer>();
+
+Update:
+Collection<integer> value=new ArrayList<>();
+
+**Collection Doesn't work with Index Number.
+**inorder to use with Index Number we will not use Collection, we use List which extends Collection.
+
+List<integer> value=new ArrayList<>();
+In list u can have Duplicate values.
+list is an Interface.
+Order Getting elements is Fixed in set.
+Every element have there index number.
+
+OR
+
+Set<integer> value=new HashSet<>();
+In list u cannot have Duplicate values.
+Set is an Interface.
+Set Contains Unique Values.
+Order Getting elements is random in set.
+ 
+Set<integer> value=new TreeSet<>();
+Advantage is that : it will given u elements in sorted format.
+
+Map<Integer,String> m=new HashMap<>(); (ThreadSafe).
+OR
+Map<Integer,String> m=new HashTable<>(); (not ThreadSafe).
+depends on u which u want to use.
+
+Map<Key,Value>
+Key value Pair.
+Every value have a key.
+ 
+NOTE: List value=new ArrayList(); value.add(Object); object type .
+So with the help of Generics we are Achieving "TypeSafety".
+List<Integer> value=new ArrayList<>(); 
+
+Using Generics We can Handle Error at Compile Time which is far Better Handling error at runtime.

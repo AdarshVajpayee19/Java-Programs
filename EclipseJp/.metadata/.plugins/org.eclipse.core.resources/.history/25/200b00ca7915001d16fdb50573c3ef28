@@ -1,0 +1,45 @@
+package JavaOopsPrograms;
+
+//this Class is Similar to enum
+//class Car
+//{
+//	static final Car LAMBORGINI=new Car();
+//	static final Car BMW=new Car();
+//	static final Car MERCEDESBENZ=new Car();
+//	static final Car ROLLSROYCE=new Car();
+//}
+
+enum Car
+{
+	LAMBORGINI(31_000_000),BMW,MERCEDESBENZ(40_00_000),ROLLSROYCE(70_000_000);
+	
+	int price;
+	
+		Car()
+		{
+			price=80_00_000;
+		}
+		Car(int paisa)
+		{
+			price=paisa;
+		}
+
+		public int getPrice()
+		{
+			return price;
+		}
+}
+
+public class EnumsExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Car c[]=Car.values();
+//		
+//		for(Car car: c)
+//		{
+//			System.out.println(car);
+//		}
+		System.out.println(Car.BMW.getPrice());
+	}
+}

@@ -1,0 +1,30 @@
+/*
+												LinkedList V/S ArrayList
+												
+The difference in LinkedListVsArrayList is Implementing the Arraylist and LinkedList:
+* ArrayList is Dynamic-Array.Say initial it has 10 elements when it is full then its capacity gets increase by 50%.i.e.15.
+  Adding the element in between in the Arraylist leads to change in the index of the other elements below it.
+  Example:
+  			Index no.   	Elements
+  			    0 				5
+  			    1  				7
+  			    2				8
+  			    3				10
+  			    4				12
+  			    5				14
+  			    
+   i.So now if we want to Add the element say 20 at index 3.then we need change the index number for element 10 to 4 and 12 for 5,14 for 6 and so on..........
+   ii. The same Problem Arises if we remove an element from the Arraylist but we need to decrement the index Number for the below elements.
+   So It consumes Much Time to arrange index number.it will effect Time complexity.		    
+  			    
+** LinkedList is Double-LinkedList.
+ 
+ Since Linked List follows the concept of Double linked list,in which every element u add forms a node.
+ In this node we have two parts info of previous Node and the next node.
+ 
+ i.Linked List much faster than ArrayList since time Consumed by linked list is less than Arraylist to add Or Remove Elements.
+ ii.Linked list Fast to assign value and arrayList is Slow To assign Value.
+ iii.In case of Searching Linked List is slow where as ArrayList is Fast since Array List Contains the Index Numbers.
+ it all depends  on the requirements.
+ 
+ */

@@ -1,0 +1,25 @@
+//this is basically used when we want to send our projects to someone else and to make the other person comfort with the version you use during your project,and he can also work on 
+that project and on that version.
+
+
+1.SET LOCATION WHERE YOU WANT TO INSERT VIRTUAL ENVIRONMENT: set-location "C:\Users\vajpa\PycharmProjects\PythonPrograms\virtual environment and requirements\adarsh\Scripts\"
+2.COMMAND TO MOVE TO PARENT DIRECTORY FROM CURRENT DIRECTORY : cd ..
+3.VIRTUAL ENVIRONMENT : virtualenv adu
+4. PATH : .\adu\Scripts\activate
+5. PERMISSION : set-executionpolicy remotesigned //it will ask for Yes or no.
+6. CHECK BY USING COMMAND : python
+7. THEN INSTALL SOME PACKAGE LIKE numpy,pandas,sklearn etc.....[in the virtual environment.]
+8. .\adu\Scripts\activate  
+9. pip freeze >requirements.txt
+10. pip install -r .\requirements.txt
+11. deactivate
+
+//In requirements.txt u can find the versions of numpy,sklearn, etc......
+example:
+numpy==1.23.4
+pandas==1.5.1
+python-dateutil==2.8.2
+pytz==2022.5
+six==1.16.0
+
+//U can even use pip install numpy==1.23.4 to download specific version....
